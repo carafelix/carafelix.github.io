@@ -1,9 +1,8 @@
-<span class="text-container">
+<span class="text-container !indent-0">
     <span class="blurred-text">
         <slot/>
     </span>
-
-    <span class="clear-text">
+    <span class="clear-text w-fit">
         <slot/>
     </span>
 </span>
@@ -22,16 +21,17 @@
 
 .clear-text {
   position: absolute;
-  top: 0;
+  top: 2px;
   left: 0;
   font-family: "Redacted Script", serif;
   text-wrap: nowrap;
 }
 
-.clear-text:focus, .clear-text:hover{
+.clear-text:focus, .clear-text:hover {
+
   font-family: 'Courier New', Courier, monospace;
   /* font-family: Inter, sans-serif; */
-  font-size: 85%;
+  font-size: 80%;
 }
 
 </style>

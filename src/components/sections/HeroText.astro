@@ -1,3 +1,8 @@
+---
+import { Image } from 'astro:assets';
+import caminante from '../../assets/section2-people.gif'
+---
+
 <div class="grid grid-cols-[calc(50px+5ch)_1fr] row-span-full items-stretch gap-x-20 gap-y-1">
 
     <div id="text-hero-svg" class="max-w-xl grow col-span-2">
@@ -7,7 +12,7 @@
     </div>
 
     <div id="caminante" class="flex">
-        <img class="invert w-full max-h-[50px] max-w-[50px] self-end min-w-[20px]"  src="src/assets/section2-people.gif" alt="monito caminando" srcset="">
+        <Image src={caminante} alt="caminante" class="invert  self-end max-w-[50px] max-h-[50px] w-full h-full"/>
         <p class="md:self-center">Ey!</p>  
     </div>
 
