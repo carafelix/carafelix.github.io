@@ -1,14 +1,17 @@
 {
-  "name": "orbital-osiris",
-  "type": "module",
-  "version": "0.0.1",
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "astro": "^5.1.10"
-  }
+    "name": "orbital-osiris",
+    "type": "module",
+    "version": "0.0.1",
+    "scripts": {
+        "dev": "astro dev",
+        "build": "astro build",
+        "preview": "astro preview",
+        "astro": "astro"
+    },
+    "dependencies": {
+        "@astrojs/react": "^4.2.0",
+        "@tailwindcss/vite": "^4.0.0",
+        "astro": "^5.1.10",
+        "tailwindcss": "^4.0.0"
+    }
 }
