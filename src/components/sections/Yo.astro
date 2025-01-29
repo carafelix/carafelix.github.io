@@ -1,34 +1,31 @@
 ---
 import Redacted from '../RedactedText.astro'
+import Image from 'astro/components/Image.astro';
 import Blurred from '../BlurredText.astro'
 import Section from '../Section.astro'
 import { Code } from 'astro:components';
+import me from '../../assets/mine/garabatos.jpeg'
 
 
 ---
 
 <Section id="yo">
    <div class="flex flex-col items-center">
-       <h2 class="text-6xl">Welcome to the Desert of the Real</h2>
-        <div class="flex">
+        <div class="grid grid-cols-[2fr_1fr]">
             <div class="text-3xl indent-20">
                 <p>I've been loaded with the deepest programs related to the Metaverse,
                     as they say, my digital-self mental projection goes by the name: 
                     <Blurred>Hero Protagonist: <i>The Swiss-Knife of Softwareland</i></Blurred>
                 </p>
-                <p>If you know what I'm talking about, open your terminal and run: 
+                <p>If you know what I'm talking about, open your terminal to execute the following: 
                         <Code code="npx hero-protagonist"                                ``
                                 lang={'bash'} 
                                 theme={'catppuccin-mocha'}
                                 inline={true}
                                 />
                     </p>
-                
             </div>
+            <Image src={me} alt="doodle me" class="invert"/>
         </div>
-        
-        <img src="" alt="">
-             
-    
    </div>
 </Section>
