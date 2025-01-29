@@ -1,4 +1,6 @@
 ---
+import Redacted from './CensoredText.astro'
+import BlurredText from './BlurredText.astro'
 import Section from './Section.astro'
 import HeroText from './sections/HeroText.astro'
 ---
@@ -6,4 +8,7 @@ import HeroText from './sections/HeroText.astro'
 <Section id="hero">
     <HeroText />
     <div class="h-0.5 bg-secondary"></div>
+
+    <p>que onda papacito <Redacted>como vas laksdkmladmklas</Redacted></p>
+    <p><BlurredText>q pasa papito</BlurredText></p> 
 </Section>

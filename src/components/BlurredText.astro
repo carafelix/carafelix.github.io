@@ -1,0 +1,31 @@
+<span class="text-container">
+    <span class="blurred-text">
+        <slot/>
+    </span>
+
+    <span class="clear-text">
+        <slot/>
+    </span>
+</span>
+
+<style>
+    .text-container {
+  position: relative;
+  display: inline-block;
+}
+
+.blurred-text {
+  filter: blur(3px);
+  user-select: none;
+} 
+
+
+.clear-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: "Redacted Script", serif;
+  text-wrap: nowrap;
+}
+
+</style>
