@@ -3,10 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import Yo from '../components/sections/Yo.astro';
 import "../styles/global.css";
+import Squares from '../components/sections/Squares.astro';
+import Redacted from '../components/RedactedText.astro';
 
 ---
 
 <Layout>
 	<Hero />
+	<Squares>
+		<Redacted>Not</Redacted> your typical web-developer
+	</Squares>
 	<Yo />
 </Layout>

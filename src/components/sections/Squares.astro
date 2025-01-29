@@ -1,0 +1,42 @@
+---
+import Section from "../Section.astro"
+---
+
+<Section>
+    <div id="scrollable-squares" class="flex justify-between px-20 items-center *:w-[20vw] *:h-[20vw] *:border-2 *:border:[#f4f5ef]">
+        <div id="square1" class="squares"></div>
+        <h1 class="!w-fit !h-fit !border-0 text-2xl md:text-3xl xl:text-4xl text-nowrap font-medium">
+            <slot />
+        </h1>
+        <div id="square2" class="squares"></div>
+    </div>
+</Section>
+
+<script is:inline>
+    const s1 = document.querySelector('#square1')
+    const s2 = document.querySelector('#square2')
+         s1.style.transform = `translateX(0) rotate(0)`
+         s2.style.transform = `translateX(0) rotate(0)`
+
+    document.addEventListener('scroll', (ev) => {
+        const pos = window.scrollY
+         s1.style.transform = `translateX(${pos}%) rotate(${pos/2}deg)`
+         s2.style.transform = `translateX(${-pos}%) rotate(${-(pos/2)}deg)`
+    })
+    
+</script>
+
+<style >
+    .squares{
+        mix-blend-mode: difference;
+        z-index: 1;
+    }
+    .squares::after {
+        background: #f4f5ef;
+        content: " ";
+        width: min(100%, 20vw);
+        height: min(100%, 20vw);
+        position: absolute;
+        transform: rotate(45deg);
+    }
+</style>

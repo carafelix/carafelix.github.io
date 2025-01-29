@@ -14,13 +14,12 @@
 .redacted span::after {
   background: #f4f5ef url(../assets/redacted.svg) center repeat-x ;
   border-radius: 0.1em;
-  box-shadow: 0 0 1px #f4f5ef35;;
-  content: " ";
+  content: "";
   width: 100%;
-  height: 1.5em;
+  height: 100%;
   left: 0;
   position: absolute;
-  transform: skewY(-10deg) rotate(10deg);
+  transform: skewY(-10deg) rotate(10deg);  
 }
 
 .redacted span:hover::after, .redacted span:focus::after{

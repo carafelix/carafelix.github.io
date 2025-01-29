@@ -22,7 +22,7 @@
      id="layer1"
      transform="translate(-102.26892,-101.47084)">
     <rect
-       style="fill:#ffffff;stroke-width:0.0581585;stroke-opacity:0.6"
+       style="fill:#ffffff;fill-opacity:0;stroke-width:0.0581585;stroke-opacity:0.6"
        id="rect592"
        width="18.407883"
        height="3.5"
@@ -37,6 +37,6 @@
        style="font-weight:bold;font-size:10.6667px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime Bold';white-space:pre;shape-inside:url(#rect382);fill:#000000;stroke-width:0.377953;stroke-opacity:0.6"><tspan
          x="276.34961"
          y="426.4407"
-         id="tspan1124">[REDACTED]</tspan></text>
+         id="tspan1566">[REDACTED]</tspan></text>
   </g>
 </svg>
