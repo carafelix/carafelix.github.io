@@ -1,4 +1,4 @@
-<span class="redacted">
+<span class="redacted pr-0.5">
   <span>
     <slot />
   </span>
@@ -7,18 +7,19 @@
 <style>
 
 .redacted span {
+  display: inline-block;
   position: relative;
-  white-space: pre;
 }
 
 .redacted span::after {
+  position: absolute;
+  padding: 0 2rem;
   background: #f4f5ef url(../assets/mine/redacted.svg) center repeat-x ;
   border-radius: 0.1em;
   content: "";
   width: 100%;
   height: 100%;
   left: 0;
-  position: absolute;
   transform: skewY(-10deg) rotate(10deg);  
 }
 

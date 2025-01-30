@@ -1,23 +1,14 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import Yo from '../components/sections/Yo.astro';
 import "../styles/global.css";
-import Squares from '../components/sections/Squares.astro';
-import Redacted from '../components/RedactedText.astro';
-import Section from '../components/Section.astro';
-
+import Yo from '../components/sections/Yo.astro';
+import Footer from '../components/sections/Footer.astro';
 ---
 
 <Layout>
 	<Hero />
-	<Squares>
-		<Redacted>Not</Redacted> your typical web developer
-	</Squares>
-	<Section>
-		<div class="flex justify-center">
-			<h2 class="text-6xl">Welcome to the Desert of the Real</h2>
-		</div>
-	</Section>
 	<Yo />
+	<Footer />
+	
 </Layout>

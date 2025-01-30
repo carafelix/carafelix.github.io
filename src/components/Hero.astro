@@ -1,18 +1,22 @@
 ---
 import Section from './Section.astro'
 import HeroText from './sections/HeroText.astro'
+import Contact from './sections/Contact.astro'
+import Squares from './sections/Squares.astro'
+import Redacted from './RedactedText.astro'
 ---
 
-<Section id="hero">
-    <HeroText />
-    <div class="flex justify-between text-sm">
-        <p>Orchestrating the <b>web</b> to the <b>fullest</b></p>
-        <div class="flex gap-3 sm:gap-10">
-            <a href="https://github.com/carafelix" class="hover:text-secondary/80 text-secondary">Github</a>
-            <a href="https://t.me/burocrata" class="hover:text-secondary/80 text-secondary">Telegram</a>
-            <a href="mailto:heroprotagonist32@gmail.com" class="hover:text-secondary/80 text-secondary">Email</a>
+<Section id="hero" fullH={true} flexC={true}>
+    <div class="flex flex-col grow">
+        <HeroText />
+        <Contact />
+        <Squares>
+            <Redacted>Not</Redacted> your typical web developer
+        </Squares>
+        
+        <div class="flex justify-center py-4">
+            <h2 class="text-6xl text-center">Welcome to the Desert of the Real</h2>
         </div>
+
     </div>
-    <div class="h-0.5 bg-secondary"></div>
-    
 </Section>
