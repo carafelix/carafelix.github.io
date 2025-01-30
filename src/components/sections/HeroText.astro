@@ -3,7 +3,7 @@ import { Image } from 'astro:assets';
 import caminante from '../../assets/section2-people.gif'
 ---
 
-<div class="grid grid-cols-[75px_1fr] grid-rows items-stretch gap-x-3 sm:gap-x-20 gap-y-1">
+<div class="grid grid-cols-[75px_1fr] grid-rows items-stretch gap-x-3 sm:gap-x-20 gap-y-1 py-2">
 
     <div id="text-hero-svg" class="max-w-xl col-span-2">
         <svg viewBox="0 0 133 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -12,7 +12,7 @@ import caminante from '../../assets/section2-people.gif'
     </div>
 
     <div id="caminante" class="flex" >
-        <Image src={caminante} alt="caminante" class="invert  self-end max-w-[50px] max-h-[50px] w-full h-full"/>
+        <Image src={caminante} alt="caminante" class="invert self-end max-w-[50px] max-h-[50px] w-full h-full"/>
         <p class="md:self-center">Ey!</p>  
     </div>
 
