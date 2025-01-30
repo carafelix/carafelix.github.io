@@ -4,26 +4,26 @@ import Image from 'astro/components/Image.astro';
 import Blurred from '../BlurredText.astro'
 import Section from '../Section.astro'
 import { Code } from 'astro:components';
-import me from '../../assets/mine/garabatos.jpeg'
-
-
+import me from '../../assets/mine/garabatos.png'
 ---
 
 <Section id="yo">
    <div class="flex flex-col items-center">
         <div class="grid grid-cols-[2fr_1fr]">
-            <div class="text-3xl indent-20">
-                <p>I've been loaded with the deepest programs related to the Metaverse,
-                    as they say, my digital-self mental projection goes by the nickname: 
-                    <Blurred>Hero Protagonist: <i>The Swiss-Knife of Softwareland</i></Blurred>
+            <div class="text-3xl">
+                <p>I've been loaded with Metaverse the marrow itself, the deepest programs run through me, by me, and for me, and
+                    as they say, my digital-self mental projection is worth the nickname: 
+                    <p>
+                        <Blurred>Hero Protagonist: <i>The Swiss-Knife of Softwareland</i></Blurred>
+                    </p>
                 </p>
-                <p>If you know what I'm talking about, open your terminal to execute the following: 
+                <p>If you know what I'm talking about, execute the following:
                         <Code code="npx hero-protagonist"                                ``
                                 lang={'bash'} 
                                 theme={'catppuccin-mocha'}
-                                inline={true}
                                 />
-                    </p>
+                    if you don't, thats okay. Not everyone is designed to enter into the rabbit hole. And thats okay.
+                </p>
             </div>
             <Image src={me} alt="doodle me" class="invert"/>
         </div>
