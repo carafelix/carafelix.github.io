@@ -7,4 +7,9 @@ export default defineConfig({
     },
     site: 'https://heroprotagonist.is-a.dev',
     compressHTML: true,
+
+    i18n: {
+        locales: ['es', 'en'],
+        defaultLocale: 'en',
+    },
 })
