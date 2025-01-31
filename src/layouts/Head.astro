@@ -1,5 +1,6 @@
 ---
 import Seo from "../components/Seo.astro"
+import Posthog from '../components/Posthog.astro'
 
 const title = 'Hero Protagonist'
 const description = 'Personal Website of the World-Honored One'
@@ -23,5 +24,6 @@ const image = {
     <title>{title}</title>
 
     <Seo {title} {description} {image} />
+    <Posthog />
 
 </head>
