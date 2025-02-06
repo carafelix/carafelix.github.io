@@ -29,8 +29,12 @@ import Redacted from "../ui/RedactedText.astro";
     <SideBySide img={smile} imgReverse={true} reverse={true}>
         <p>Front end, backend, design, architecture, you name it. 
             <br><br>
-                <a href="https://www.youtube.com/watch?v=qAYXgbSlSv0" target="_blank">
-                    I don't even see the <span class="text-[#00FF41] hover:opacity-80">code</span> anymore, all I see is:
+            I don't even see the 
+                <a href="https://www.youtube.com/watch?v=qAYXgbSlSv0" target="_blank" class="text-[#00FF41] hover:opacity-80">
+                    code
+                </a>
+                    anymore, all I see is:
+                <a href="https://www.youtube.com/watch?v=qAYXgbSlSv0" target="_blank" class="hover:opacity-80">
                     <Code code=
 `{
     "blonde":   [-34.856964, -71.967637],
@@ -43,7 +47,7 @@ import Redacted from "../ui/RedactedText.astro";
                         class:list={['overflow-y-hidden','md:text-xl','text-lg' , 'w-fit','m-2','p-1', 'hover:opacity-80']}
                     />
                 </a>
-        </p>
+            </p>
     </SideBySide>
 
     <SideBySide img={rabbit}>
