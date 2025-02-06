@@ -6,7 +6,9 @@ const { id , fullH, flexC } = Astro.props
                 class:list={
                 [
                     { 'h-[100vh]' :   fullH },
-                    { 'flex flex-col'        :   flexC }
+                    { 'flex flex-col'        :   flexC },
+                    'items-center',
+                    'justify-items-center'
                 ]}>
     <slot/>
 </section>
