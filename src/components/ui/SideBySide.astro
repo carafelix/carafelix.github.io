@@ -5,11 +5,11 @@ const order = reverse ? 'sm:flex-row-reverse justify-end' : 'sm:flex-row'
 ---
 
 <div class:list={[order, 'flex', 'flex-col', 'justify-center', 'items-center', 'justify-items-center', 'mx-auto', 'py-10']}>
-    <div class="text-4xl max-w-[45ch]">
+    <div class="text-2xl sm:text-4xl max-w-[45ch]">
         <slot />
     </div>
         <Image src={img} alt="doodle me" 
-                class="invert sm:max-w-[250px] sm:min-w-[160px] max-w-[200px] :min-w-[80px] lg:p-10 p-4" 
+                class="invert sm:max-w-[250px] sm:min-w-[160px] max-w-[200px] min-w-[80px] lg:p-10 p-4" 
                 class:list={[
                     {'scale-x-[-1]' : imgReverse}
                 ]}/>
