@@ -7,6 +7,6 @@
         "editor.defaultFormatter": "denoland.vscode-deno"
     },
     "[xml]": {
-        "editor.defaultFormatter": "DotJoshJohnson.xml"
+        "editor.defaultFormatter": "mikeburgh.xml-format"
     }
 }
