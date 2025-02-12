@@ -1,5 +1,18 @@
-<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg fill="#ffffff" width="800px" height="800px" viewBox="0 0 22 22"
-    xmlns="http://www.w3.org/2000/svg" id="memory-email">
-    <path d="M1 5H2V4H20V5H21V18H20V19H2V18H1V5M3 17H19V9H18V10H16V11H14V12H12V13H10V12H8V11H6V10H4V9H3V17M19 6H3V7H5V8H7V9H9V10H13V9H15V8H17V7H19V6Z" />
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#ffffff"
+   width="727.27271"
+   height="545.45453"
+   viewBox="0 0 19.999999 15"
+   id="memory-email"
+   version="1.1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs372" />
+  <path
+     d="M 0,1 H 1 V 0 h 18 v 1 h 1 v 13 h -1 v 1 H 1 V 14 H 0 V 1 M 2,13 H 18 V 5 H 17 V 6 H 15 V 7 H 13 V 8 H 11 V 9 H 9 V 8 H 7 V 7 H 5 V 6 H 3 V 5 H 2 v 8 M 18,2 H 2 v 1 h 2 v 1 h 2 v 1 h 2 v 1 h 4 V 5 h 2 V 4 h 2 V 3 h 2 z"
+     id="path367" />
 </svg>
