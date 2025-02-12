@@ -1,0 +1,12 @@
+{
+    "editor.defaultFormatter": "astro-build.astro-vscode",
+    "[markdown]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "denoland.vscode-deno"
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
+    }
+}

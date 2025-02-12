@@ -6,22 +6,38 @@ import Squares from '../ui/Squares.astro'
 import Redacted from '../ui/RedactedText.astro'
 ---
 
-<Section id="hero" fullH={true} flexC={true}>
-    <div class="flex flex-col grow">
+<Section
+    id='hero'
+    fullH={true}
+    flexC={true}
+>
+    <div class='flex flex-col grow'>
         <HeroText />
         <Contact />
         <Squares>
-            <h1 class="text-2xl sm:text-4xl text-center overflow-clip font-medium">
-                <span><Redacted><span class="font-bold">Not</span></Redacted> your typical </span>
-                <span class="inline-block">web developer</span>
+            <h1
+                class='text-2xl sm:text-4xl text-center overflow-clip font-medium'
+            >
+                <span
+                    ><Redacted
+                        ><span class='font-bold'>Not</span
+                        ></Redacted
+                    > your typical
+                </span>
+                <span class='inline-block'
+                    >web developer</span
+                >
             </h1>
         </Squares>
-        
-        <div class="flex justify-center items-center grow">
+
+        <div class='flex justify-center items-center grow'>
             <blockquote>
-                <h2 class="text-5xl sm:text-6xl text-center">Welcome to the Desert of the Real</h2>
+                <h2
+                    class='text-5xl sm:text-6xl text-center'
+                >
+                    Welcome to the Desert of the Real
+                </h2>
             </blockquote>
         </div>
-
     </div>
 </Section>

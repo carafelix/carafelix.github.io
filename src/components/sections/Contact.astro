@@ -5,27 +5,46 @@ import tg from '../../assets/tg.svg'
 import email from '../../assets/email.svg'
 ---
 
-    <div class="h-0.5 bg-secondary"></div>
+<div class='h-0.5 bg-secondary'></div>
 
-    <div class="flex justify-between text-md items-center">
+<div class='flex justify-between text-md items-center'>
+    <p>
+        Orchestrating the <b>web</b> to the <b>fullest</b>
+    </p>
 
-        <p>Orchestrating the <b>web</b> to the <b>fullest</b></p>
+    <div
+        class='flex gap-3 sm:gap-10 *:**:max-w-6 *:**:py-0.5 *:hover:opacity-80'
+    >
+        <a
+            href='https://github.com/carafelix'
+            target='”_blank”'
+        >
+            <Image
+                src={gh}
+                alt='github'
+            />
 
-        <div class="flex gap-3 sm:gap-10 *:**:max-w-6 *:**:py-0.5">
+            <a
+                href='https://t.me/burocrata'
+                target='”_blank”'
+            >
+                <Image
+                    src={tg}
+                    alt='telegram'
+                />
 
-            <a href="https://github.com/carafelix" class="hover:opacity-80 text-secondary" target=”_blank”>
-                <Image src={gh} alt='github' >
+                <a
+                    href='mailto:heroprotagonist32@gmail.com'
+                    target='”_blank”'
+                >
+                    <Image
+                        src={email}
+                        alt='email'
+                    />
+                </a>
             </a>
 
-            <a href="https://t.me/burocrata" class="hover:opacity-80 text-secondary" target=”_blank”>
-                <Image src={tg} alt='telegram'>
-            </a>
-
-            <a href="mailto:heroprotagonist32@gmail.com" class="hover:opacity-80 text-secondary" target=”_blank”>
-                <Image src={email} alt='email'>
-            </a>
-
-        </div>
+            <div class='h-0.5 bg-secondary mb-10'></div></a
+        >
     </div>
-    
-    <div class="h-0.5 bg-secondary mb-10"></div>
+</div>

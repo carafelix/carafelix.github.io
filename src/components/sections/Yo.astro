@@ -1,116 +1,183 @@
 ---
-import { Code } from "astro:components";
-import Section from "../ui/Section.astro";
-import SideBySide from "../ui/SideBySide.astro";
-import Blurred from "../ui/BlurredText.astro";
+import { Code } from 'astro:components'
+import Section from '../ui/Section.astro'
+import SideBySide from '../ui/SideBySide.astro'
+import Blurred from '../ui/BlurredText.astro'
 import corbata from '../../assets/mine/garabatos.png'
 import rabbit from '../../assets/mine/garabatos4.png'
 import face from '../../assets/mine/garabatos1.png'
 import tonge from '../../assets/mine/garabatos3.png'
 import smile from '../../assets/mine/garabatos30.png'
-import Redacted from "../ui/RedactedText.astro";
+import Redacted from '../ui/RedactedText.astro'
 ---
 
-<Section id="yo">
+<Section id='yo'>
     <SideBySide img={corbata}>
-        <p>I've been loaded into this Metaverse
-             with the deepest programs run through me, by me and for me. 
-             Feeding from the Marrow of the Matrix itself.
-        </p>
-        <br>
         <p>
-        As a consequence my digital-self mental projection has gained the nickname:
-        <br>
-        <br>
-            <Blurred>Hero Protagonist: <i>The Swiss-Knife of Softwareland</i></Blurred>
+            I've been loaded into this Metaverse with the
+            deepest programs run through me, by me and for
+            me. Feeding from the Marrow of the Matrix
+            itself.
+        </p>
+        <br />
+        <p>
+            As a consequence my digital-self mental
+            projection has gained the nickname:
+            <br />
+            <br />
+            <Blurred
+                >Hero Protagonist: <i
+                    >The Swiss-Knife of Softwareland</i
+                ></Blurred
+            >
         </p>
     </SideBySide>
 
-    <SideBySide img={smile} imgReverse={true} reverse={true}>
-        <p>Front end, backend, design, architecture, you name it. 
-            <br><br>
-            I don't even see the 
-                <a href="https://www.youtube.com/watch?v=qAYXgbSlSv0" target="_blank" class="text-[#00FF41] hover:opacity-80">
-                    code
-                </a>
-                    anymore, all I see is:
-                <a href="https://www.youtube.com/watch?v=qAYXgbSlSv0" target="_blank" class="hover:opacity-80">
-                    <Code code=
-`{
+    <SideBySide
+        img={smile}
+        imgReverse={true}
+        reverse={true}
+    >
+        <p>
+            Front end, backend, design, architecture, you
+            name it.
+            <br /><br />
+            I don't even see the
+            <a
+                href='https://www.youtube.com/watch?v=qAYXgbSlSv0'
+                target='_blank'
+                class='text-[#00FF41] hover:opacity-80'
+            >
+                code
+            </a>
+            anymore, all I see is:
+            <a
+                href='https://www.youtube.com/watch?v=qAYXgbSlSv0'
+                target='_blank'
+                class='hover:opacity-80'
+            >
+                <Code
+                    code=`{
     "blonde":   [-34.856964, -71.967637],
     "brunette": [-54.963297, -67.635935],
     "redhead":  [-33.462749, -70.657357]
 }`
-                        theme={'catppuccin-mocha'}
-                        lang={'json'}
-                        wrap={true}
-                        class:list={['overflow-y-hidden','md:text-xl','text-lg' , 'w-fit','m-2','p-1', 'hover:opacity-80']}
-                    />
-                </a>
-            </p>
+                    theme={'catppuccin-mocha'}
+                    lang={'json'}
+                    wrap={true}
+                    class:list={[
+                        'overflow-y-hidden',
+                        'md:text-xl',
+                        'text-lg',
+                        'w-fit',
+                        'm-2',
+                        'p-1',
+                        'hover:opacity-80',
+                    ]}
+                />
+            </a>
+        </p>
     </SideBySide>
 
     <SideBySide img={rabbit}>
-        <p>If you know what I'm talking about, open your terminal and execute:
-            <a href="https://github.com/carafelix/terminal-curriculum" class="hover:opacity-80" target="_blank">
-                <Code code="npx hero-protagonist"                                
-                    lang={'bash'} 
+        <p>
+            If you know what I'm talking about, open your
+            terminal and execute:
+            <a
+                href='https://github.com/carafelix/terminal-curriculum'
+                class='hover:opacity-80'
+                target='_blank'
+            >
+                <Code
+                    code='npx hero-protagonist'
+                    lang={'bash'}
                     theme={'catppuccin-mocha'}
                     wrap={true}
                     inline={true}
-                    />
+                />
             </a>
         </p>
-        <br>
+        <br />
         <p>
-            If you don't know, thats okay. <br> Not everyone is 
-            <a class="text-red-600 hover:opacity-80" href="https://youtu.be/zuUtAPUZP0Q?t=55" target=”_blank”>designed</a>
+            If you don't know, thats okay. <br /> Not everyone
+            is
+            <a
+                class='text-red-600 hover:opacity-80'
+                href='https://youtu.be/zuUtAPUZP0Q?t=55'
+                target='”_blank”'
+                >designed</a
+            >
             to look into the rabbit hole.
         </p>
     </SideBySide>
-    
-    <SideBySide img={face} reverse={true}>
+
+    <SideBySide
+        img={face}
+        reverse={true}
+    >
         <p>
-            Well... thats all fun and jokes but really: I'm a Software Developer by trade, self-taught, 
-            <a href="https://github.com/carafelix?tab=overview&from=2024-12-01&to=2024-12-31" 
-                class="text-cyan-400 hover:opacity-80"
-                target="_blank">
+            Well... thats all fun and jokes but really: I'm
+            a Software Developer by trade, self-taught,
+            <a
+                href='https://github.com/carafelix?tab=overview&from=2024-12-01&to=2024-12-31'
+                class='text-cyan-400 hover:opacity-80'
+                target='_blank'
+            >
                 Open&#8209;Source
             </a>
-            enthusiast, <a href="https://www.instagram.com/veet_labs/" target="_blank" class="retro text-nowrap hover:opacity-80">GC Modder</a> and undisclosed writer, which loves to learn and do stuff. 
+            enthusiast, <a
+                href='https://www.instagram.com/veet_labs/'
+                target='_blank'
+                class='retro text-nowrap hover:opacity-80'
+                >GC Modder</a
+            > and undisclosed writer, which loves to learn and
+            do stuff.
         </p>
-        <br>
-        <p>    
+        <br />
+        <p>
             Problem solving
-            <a href="https://www.epdlp.com/texto.php?id2=4685" target="_blank" class="text-amber-400 hover:opacity-80">
+            <a
+                href='https://www.epdlp.com/texto.php?id2=4685'
+                target='_blank'
+                class='text-amber-400 hover:opacity-80'
+            >
                 is my Paradise.
             </a>
-            I focus on simplicity, optimization and aesthetical solutions.
+            I focus on simplicity, optimization and aesthetical
+            solutions.
         </p>
-
     </SideBySide>
 
     <SideBySide img={tonge}>
         <p>
-                In my free time I allow myself to be a normal
-                    
-            <blockquote>               
+            In my free time I allow myself to be a normal
+
+            <blockquote>
                 <Redacted>LOW&#8209;IQ</Redacted>
                 <Redacted>HIGH-ENERGY JACKRABBIT</Redacted>
-                <Redacted>FUCKING WANNABE BIG&#8209;TIME</Redacted>
+                <Redacted
+                    >FUCKING WANNABE BIG&#8209;TIME</Redacted
+                >
                 <Redacted>SMALL&#8209;TIME</Redacted>
-                <Redacted>SHIT&#8209;TALKING BOTHERSOME</Redacted>
+                <Redacted
+                    >SHIT&#8209;TALKING BOTHERSOME</Redacted
+                >
                 <Redacted>IRRITATING MOTHERFUCKER</Redacted>
                 <cite>
-                    <a href="https://youtu.be/MHPn8ON_g9g?t=32" target="_blank" class="hover:opacity-80">³²</a>
+                    <a
+                        href='https://youtu.be/MHPn8ON_g9g?t=32'
+                        target='_blank'
+                        class='hover:opacity-80'
+                        >³²</a
+                    >
                 </cite>
             </blockquote>
-                human being who reads, climbs and writes basically.
+            human being who reads, climbs and writes basically.
         </p>
     </SideBySide>
 </Section>
 <style>
     .retro {
-        font-family: "Jersey 10", serif;;
+        font-family: 'Jersey 10', serif;
     }
 </style>

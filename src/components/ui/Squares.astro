@@ -1,37 +1,47 @@
 ---
-import Section from "../ui/Section.astro"
+import Section from '../ui/Section.astro'
 ---
 
 <Section>
-    <div id="scrollable-squares" class="flex justify-between sm:mx-20 items-center overflow-hidden">
-        <div id="square1" class="squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]"></div>
-            <slot />
-        <div id="square2" class="squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]"></div>
+    <div
+        id='scrollable-squares'
+        class='flex justify-between sm:mx-20 items-center overflow-hidden'
+    >
+        <div
+            id='square1'
+            class='squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]'
+        >
+        </div>
+        <slot />
+        <div
+            id='square2'
+            class='squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]'
+        >
+        </div>
     </div>
 </Section>
 
 <script is:inline>
     const s1 = document.querySelector('#square1')
     const s2 = document.querySelector('#square2')
-         s1.style.transform = `translateX(0) rotate(0)`
-         s2.style.transform = `translateX(0) rotate(0)`
+    s1.style.transform = `translateX(0) rotate(0)`
+    s2.style.transform = `translateX(0) rotate(0)`
 
     document.addEventListener('scroll', (ev) => {
         const pos = window.scrollY
-         s1.style.transform = `translateX(${pos}%) rotate(${pos/2}deg)`
-         s2.style.transform = `translateX(${-pos}%) rotate(${-(pos/2)}deg)`
+        s1.style.transform = `translateX(${pos}%) rotate(${pos / 2}deg)`
+        s2.style.transform = `translateX(${-pos}%) rotate(${-(pos / 2)}deg)`
     })
-    
 </script>
 
-<style >
-    .squares{
+<style>
+    .squares {
         mix-blend-mode: difference;
         z-index: 1;
     }
     .squares::after {
         background: #f4f5ef;
-        content: " ";
+        content: ' ';
         width: min(100%, 20vw);
         height: min(100%, 20vw);
         position: absolute;

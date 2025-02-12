@@ -1,42 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-<svg
-   width="18mm"
-   height="8mm"
-   viewBox="0 0 18.40789 3.5"
-   version="1.1"
-   id="svg259"
+<svg width="18mm" height="8mm" viewBox="0 0 18.40789 3.5" version="1.1" id="svg259"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
-  <defs
-     id="defs256">
-    <rect
-       x="276.35016"
-       y="417.76282"
-       width="234.0957"
-       height="85.822639"
-       id="rect382" />
-  </defs>
-  <g
-     id="layer1"
-     transform="translate(-102.26892,-101.47084)">
-    <rect
-       style="fill:#ffffff;fill-opacity:0;stroke-width:0.0581585;stroke-opacity:0.6"
-       id="rect592"
-       width="18.407883"
-       height="3.5"
-       x="102.26893"
-       y="101.47083"
-       ry="0.10178675"
-       rx="0" />
-    <text
-       xml:space="preserve"
-       transform="matrix(0.26256327,0,0,0.28152404,30.444162,-16.129556)"
-       id="text380"
-       style="font-weight:bold;font-size:10.6667px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime Bold';white-space:pre;shape-inside:url(#rect382);fill:#000000;stroke-width:0.377953;stroke-opacity:0.6"><tspan
-         x="276.34961"
-         y="426.4407"
-         id="tspan1566">[REDACTED]</tspan></text>
-  </g>
+   <defs id="defs256">
+      <rect x="276.35016" y="417.76282" width="234.0957" height="85.822639" id="rect382" />
+   </defs>
+   <g id="layer1" transform="translate(-102.26892,-101.47084)">
+      <rect style="fill:#ffffff;fill-opacity:0;stroke-width:0.0581585;stroke-opacity:0.6" id="rect592" width="18.407883" height="3.5" x="102.26893" y="101.47083" ry="0.10178675" rx="0" />
+      <text xml:space="preserve" transform="matrix(0.26256327,0,0,0.28152404,30.444162,-16.129556)" id="text380" style="font-weight:bold;font-size:10.6667px;font-family:'Courier Prime';-inkscape-font-specification:'Courier Prime Bold';white-space:pre;shape-inside:url(#rect382);fill:#000000;stroke-width:0.377953;stroke-opacity:0.6">
+         <tspan x="276.34961" y="426.4407" id="tspan1566">[REDACTED]</tspan>
+      </text>
+   </g>
 </svg>

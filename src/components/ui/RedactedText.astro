@@ -1,31 +1,39 @@
-
-<span class="redacted pr-0.5 w-fit">
-  <span class:list={['sm:after:px-8', 'sm:pl-7', 'pr-1', 'sm:pl-0', 'text-start', 'bg-repeat-x']}>
-    <slot />
-  </span>
+<span class='redacted pr-0.5 w-fit'>
+    <span
+        class:list={[
+            'sm:after:px-8',
+            'sm:pl-7',
+            'pr-1',
+            'sm:pl-0',
+            'text-start',
+            'bg-repeat-x',
+        ]}
+    >
+        <slot />
+    </span>
 </span>
 
 <style>
+    .redacted span {
+        display: inline-block;
+        position: relative;
+    }
 
-.redacted span {
-  display: inline-block;
-  position: relative;
-}
+    .redacted span::after {
+        position: absolute;
+        background: #f4f5ef
+            url(../../assets/mine/redacted.svg) center;
+        border-radius: 0.1em;
+        content: '';
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: skewY(-10deg) rotate(10deg);
+    }
 
-.redacted span::after {
-  position: absolute;
-  background: #f4f5ef url(../../assets/mine/redacted.svg) center;
-  border-radius: 0.1em;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  transform: skewY(-10deg) rotate(10deg);
-}
-
-.redacted span:hover::after, .redacted span:focus::after{
-  background: none;
-}
-
+    .redacted span:hover::after,
+    .redacted span:focus::after {
+        background: none;
+    }
 </style>

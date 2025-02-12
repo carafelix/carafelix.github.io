@@ -1,36 +1,35 @@
-<span class="text-container !indent-0">
-    <span class="blurred-text w-fit">
-        <slot/>
+<span class='text-container !indent-0'>
+    <span class='blurred-text w-fit'>
+        <slot />
     </span>
-    <span class="scripted-text w-fit">
-        <slot/>
+    <span class='scripted-text w-fit'>
+        <slot />
     </span>
 </span>
 
 <style>
-.text-container {
-  position: relative;
-  display: inline-block;
-}
+    .text-container {
+        position: relative;
+        display: inline-block;
+    }
 
-.blurred-text {
-  filter: blur(5px);
-  user-select: none;
-} 
+    .blurred-text {
+        filter: blur(5px);
+        user-select: none;
+    }
 
+    .scripted-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-family: 'Redacted Script', serif;
+        font-size: 99.5%;
+    }
 
-.scripted-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  font-family: "Redacted Script", serif;
-  font-size: 99.5%;
-  }
-
-.scripted-text:focus, .scripted-text:hover {
-  /* font-family: 'Courier New', Courier, monospace; */
-  font-family: Inter, sans-serif;
-  font-size: 100%;
-}
-
+    .scripted-text:focus,
+    .scripted-text:hover {
+        /* font-family: 'Courier New', Courier, monospace; */
+        font-family: Inter, sans-serif;
+        font-size: 100%;
+    }
 </style>

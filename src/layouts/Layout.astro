@@ -1,10 +1,14 @@
 ---
-import Head from "./Head.astro"
+import Head from './Head.astro'
 ---
+
 <!doctype html>
-<html lang="en" class:list={['overflow-x-hidden','overflow-y-scroll']}>
-	<Head />
-	<body>
-		<slot />
-	</body>
+<html
+    lang='en'
+    class:list={['overflow-x-hidden', 'overflow-y-scroll']}
+>
+    <Head />
+    <body>
+        <slot />
+    </body>
 </html>

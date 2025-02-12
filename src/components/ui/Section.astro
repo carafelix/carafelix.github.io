@@ -1,14 +1,16 @@
 ---
-const { id , fullH, flexC } = Astro.props
+const { id, fullH, flexC } = Astro.props
 ---
 
-<section id={id} class="px-8 pb-10 w-[calc(100vw-2rem)]" 
-                class:list={
-                [
-                    { 'h-[100vh]' :   fullH },
-                    { 'flex flex-col'        :   flexC },
-                    'items-center',
-                    'justify-items-center'
-                ]}>
-    <slot/>
+<section
+    id={id}
+    class='px-8 pb-10 w-[calc(100vw-2rem)]'
+    class:list={[
+        { 'h-[100vh]': fullH },
+        { 'flex flex-col': flexC },
+        'items-center',
+        'justify-items-center',
+    ]}
+>
+    <slot />
 </section>
