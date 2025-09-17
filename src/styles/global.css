@@ -19,14 +19,14 @@
         /* Alternate one */ 'cv09',
         /* Flat-top three */ 'cv02' 1; /* Open 4 */
     /* font-family: Inter, sans-serif; */
-    font-family: monospace;
+    font-family: 'DejaVu Sans Mono', ui-monospace, monospace;
     font-variant-numeric: tabular-nums;
     box-sizing: border-box;
 }
 @supports (font-variation-settings: normal) {
     /* Use variable font if supported */
     :root {
-        font-family: 'DejaVu Sans Mono', ui-monospace, monospace ;
+        font-family: 'DejaVu Sans Mono', ui-monospace, monospace;
     }
 }
 
