@@ -5,17 +5,17 @@ import Section from '../ui/Section.astro'
 <Section grow>
     <div
         id='scrollable-squares'
-        class='flex justify-between sm:mx-20 items-center overflow-hidden'
+        class='flex-col sm:flex-row flex justify-between sm:mx-20 items-center overflow-hidden'
     >
         <div
             id='square1'
-            class='squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]'
+            class='squares min-w-[20vw] min-h-[20vw] border-2 border:[#f4f5ef]'
         >
         </div>
         <slot />
         <div
             id='square2'
-            class='squares w-[20vw] h-[20vw] border-2 border:[#f4f5ef]'
+            class='squares min-w-[20vw] min-h-[20vw] border-2 border:[#f4f5ef]'
         >
         </div>
     </div>
