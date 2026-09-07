@@ -209,7 +209,7 @@ export function SpecimenCarousel({
 
           <div className="grid items-end gap-3 py-2 sm:gap-6 sm:py-10 md:grid-cols-[minmax(0,1fr)_13rem]">
             <div className="min-w-0">
-              <div className="relative mb-3 inline-flex sm:mb-5">
+              <div className="relative mb-3 inline-flex m-2 my-5 sm:mx-auto">
                 <span
                   className={[
                     "absolute -top-3 h-3 w-3 border-t border-(--ink)",
@@ -234,7 +234,7 @@ export function SpecimenCarousel({
                   />
                 )}
               </div>
-              <h3 className="font-serif text-[clamp(2.25rem,8vw,6rem)] italic leading-[0.86] tracking-[-0.075em]">
+              <h3 className="pt-4 font-serif text-[clamp(2.25rem,8vw,6rem)] italic leading-[0.86] tracking-[-0.075em]">
                 {active.title}
               </h3>
             </div>
