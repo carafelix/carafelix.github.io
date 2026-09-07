@@ -4,10 +4,29 @@ import Hero from '../components/sections/Hero.astro'
 import '../styles/global.css'
 import Yo from '../components/sections/Yo.astro'
 import Footer from '../components/sections/Footer.astro'
+import Squares from '../components/ui/Squares.astro'
+import Redacted from '../components/ui/RedactedText.astro'
 ---
 
 <Layout>
-    <Hero />
+    <Hero>
+        <Squares>
+            <h1
+                class='text-2xl sm:text-4xl text-center overflow-clip font-medium my-10 mx-5'
+            >
+                <span
+                    ><Redacted
+                        ><span class='font-black text-4xl'
+                            >Not</span
+                        ></Redacted
+                    > your typical
+                </span>
+                <span class='inline-block'
+                    >web developer</span
+                >
+            </h1>
+        </Squares>
+    </Hero>
     <Yo />
     <Footer />
 </Layout>
