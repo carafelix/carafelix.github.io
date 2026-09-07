@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.846489mm"
+   height="172.48395mm"
+   viewBox="0 0 90.846489 172.48395"
+   version="1.1"
+   id="svg5"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+   
+   <style>
+	rect {
+		fill: #fff
+	}
+	</style>
+   
+  <defs
+     id="defs2" />
+  <g
+     id="layer1"
+     transform="translate(-77.641321,-53.496478)">
+    <g
+       id="g573"
+       transform="matrix(0.51527949,0.51527949,-0.51527949,0.51527949,104.87108,4.0827725)">
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect534"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="93.764717"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect563"
+         width="40"
+         height="40"
+         x="129.07271"
+         y="51.431351"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect565"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="9.0980368"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect567"
+         width="40"
+         height="40"
+         x="44.406048"
+         y="51.431351"
+         ry="0.10178675" />
+    </g>
+    <g
+       id="g672"
+       transform="matrix(0.72871525,0,0,0.72871525,45.281957,128.50405)">
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect664"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="93.764717"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect666"
+         width="40"
+         height="40"
+         x="129.07271"
+         y="51.431351"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect668"
+         width="40"
+         height="40"
+         x="86.73938"
+         y="9.0980368"
+         ry="0.10178675" />
+      <rect
+         style="stroke-width:0.0264583"
+         id="rect670"
+         width="40"
+         height="40"
+         x="44.406048"
+         y="51.431351"
+         ry="0.10178675" />
+    </g>
+  </g>
+</svg>

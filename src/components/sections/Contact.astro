@@ -3,9 +3,11 @@ import { Image } from 'astro:assets'
 import gh from '../../assets/gh.svg'
 import tg from '../../assets/tg.svg'
 import email from '../../assets/email.svg'
+
+const isHome = Astro.url.pathname === '/';
 ---
 
-<div class='h-0.5 bg-secondary'></div>
+<div class='h-0.5 bg-primary'></div>
 
 <div
     class='flex justify-between text-md items-center gap-5'
@@ -13,6 +15,22 @@ import email from '../../assets/email.svg'
     <p>
         Orchestrating the <b>web</b> to the <b>fullest</b>
     </p>
+
+    {
+        isHome ? (
+            <a
+                href='/projects'>
+                Projects
+            </a>
+        ) : (
+            <a
+                href='/'>
+                Home
+            </a>
+        )
+
+    }
+
 
     <div
         class='flex gap-3 sm:gap-10 *:**:max-w-6 *:**:py-1 *:hover:opacity-80 items-center'
@@ -26,6 +44,7 @@ import email from '../../assets/email.svg'
                 alt='github'
             />
         </a>
+        
 
         <a
             href='https://t.me/burocrata'
@@ -49,4 +68,4 @@ import email from '../../assets/email.svg'
         </a>
     </div>
 </div>
-<div class='h-0.5 bg-secondary'></div>
+<div class='h-0.5 bg-primary'></div>

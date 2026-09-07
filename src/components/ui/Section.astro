@@ -1,13 +1,12 @@
 ---
-const { id } = Astro.props
+const { id, extraClasses = []} = Astro.props
 ---
 
 <section
     id={id}
-    class='px-8 pb-10 mx-auto'
     class:list={[
-        'items-center',
-        'justify-items-center',
+        'px-8',
+        'pb-10',
     ]}
 >
     <slot />

@@ -1,0 +1,256 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Hero from '../components/sections/Hero.astro'
+import '../styles/global.css'
+import Footer from '../components/sections/Footer.astro'
+import Section from '../components/ui/Section.astro'
+import SpecimenCarousel from '@/components/mellow/specimen-carousel'
+import EncryptedText from '@/components/mellow/encrypted-text'
+import world from '@/assets/world.svg'
+import divino from '@/assets/divino.svg'
+import rosita from '@/assets/planisferio.svg'
+import gY from '@/assets/gY.svg'
+import xat from '@/assets/f.png'
+import pandiff from '@/assets/feather.png'
+import terminal from '@/assets/terminal.svg'
+import css from '@/assets/css.svg'
+import gcc from '@/assets/gcc.svg'
+import l from '@/assets/l2.svg'
+---
+
+<Layout>
+    <Hero />
+    <Section>
+        <h1 class="w-full text-6xl sm:text-8xl text-center">
+            <EncryptedText text="Projects" trigger="scroll" client:load/>
+        </h1>
+    </Section>
+    <Section>
+        <h2 class="text-4xl">
+            WebDev & SysOps
+        </h2>
+        <SpecimenCarousel 
+            items={[
+                
+                {
+                    kicker: "Telegram",
+                    title: "Haiku",
+                    sample: "俳句",
+                    meta: "Daily poetry",
+                    links: [['https://t.me/s/mainichihaiku', 'Live ↗'], ['https://github.com/carafelix/haiku', 'Code ↗']],
+                    description:
+                    "Automated Japanese Haiku delivery through Telegram, VPS hosted.",
+                },
+                {
+                    kicker: "Telegram Bot Framework",
+                    title: "Commands",
+                    sample: gY,
+                    meta: "Open Source Maintainer",
+                    links: [['https://github.com/grammyjs/commands', 'Code ↗']],
+                    description:
+                    "Open Source Telegram Bot Framework Commands Plugin maintainer.",
+                },
+                {
+                    kicker: "VScode",
+                    title: "Pandiff",
+                    sample: pandiff,
+                    meta: "Plugin",
+                    links: [['https://github.com/carafelix/pandiff-vscode', 'Code ↗']],
+                    description:
+                    "Integrate Pandoc Differences into VScode, for cross-format text differences.",
+                },
+                {
+                    kicker: "Web",
+                    title: "Fran735",
+                    sample: rosita,
+                    meta: "Artist Portafolio",
+                    links: [['https://fran735.cl', 'Live ↗']],
+                    description:
+                    "Minimal, Wool-inspired, self-managed visual artist portafolio.",
+                },
+                {
+                    kicker: "Web",
+                    title: "Planisferio",
+                    sample: world,
+                    meta: "Text",
+                    links: [['https://planisferio.cl', 'Live ↗'], ['https://github.com/neoenanos/planisferio', 'Code ↗']],
+                    description:
+                    "Quote curatorship website.",
+                },
+                {
+                    kicker: "Web & Real",
+                    title: "Divino Anticristo",
+                    sample: divino,
+                    meta: "Literature open-preservation initiative",
+                    links: [['https://divinoanticristo.cl', 'Live ↗'], ['https://github.com/neoenanos/divino-anticristo', 'Code ↗']],
+                    description:
+                    "Website, Font Design & Archive maintainer of Divino Anticristo works.",
+                },
+                {
+                    kicker: "Telegram",
+                    title: "Oppiano",
+                    sample: l,
+                    meta: "Daily poetry",
+                    links: [['https://t.me/Oppiano_bot', 'Live ↗'], ['https://github.com/carafelix/lezama-bot', 'Code ↗']],
+                    description:
+                    "User personal queue of Lezama's poetry through Telegram. Serverless Bot.",
+                },
+                {
+                    kicker: "Telegram",
+                    title: "Xat Relay",
+                    sample: xat,
+                    meta: "Brain Damage Appreciation",
+                    links: [['https://t.me/s/xatdotcom', 'Live ↗'], ['https://github.com/carafelix/xat-bot', 'Code ↗']],
+                    description:
+                    "Xat dot com listener and relayer to Telegram channel. VPS hosted.",
+                },
+                {
+                    kicker: "CLI",
+                    title: "Terminal CV",
+                    sample: terminal,
+                    meta: "npx hero-protagonist",
+                    links: [['https://stackblitz.com/edit/node-w4pxpzvr', 'Live ↗'], ['https://github.com/carafelix/terminal-curriculum', 'Code ↗']],
+                    description: "Terminal-based personal presentation.",
+                },
+            ]}
+            client:load
+        />
+    </Section>
+    <Section>
+        <h2 class="text-4xl">
+            Digital Publishing
+        </h2>
+        <SpecimenCarousel mirror
+                items={[
+                {
+                    kicker: "ePub, PDF, HTML",
+                    title: "Ghostbinder",
+                    sample: "Pandoc",
+                    meta: "SSOT multiplatform publishing",
+                    links: [['https://github.com/neoenanos/gordo', 'Code ↗'], ['https://github.com/neoenanos/gordo/releases/download/v1.5.2/lezama_lima-poesia_completa.pdf', 'Example ↗']],
+                    description:
+                    "Create Digital PDF, ePub and Physical book-ready PDF, all at once, from a single markdown file. Tested in 10+ books. ~15 hand-made ebooks yet to be ported.",
+                },
+                {
+                    kicker: "Theatre",
+                    title: "Playwright",
+                    sample: "Smart",
+                    meta: "Script",
+                    links: [['https://typst.app/project/r37KNZUGd781DlPPNxBQgt', 'Live Code ↗']],
+                    description:
+                    "Create acting Scripts with Typst. QoL as auto-props, dramatis personae, and more .",
+                },
+                {
+                    kicker: "Poetry",
+                    title: "Plaquette",
+                    sample: "Auto",
+                    meta: "Book Layout",
+                    links: [['https://typst.app/project/rjNro4T82VX7m2JFq1wqUi', 'LiveCode ↗']],
+                    description:
+                    "Easy to use Typst template for printing Poetry Plaquettes.",
+                },
+            ]}
+        client:load/>
+    </Section>
+    <Section>
+        <h2 class="text-4xl">
+            Data & AI
+        </h2>
+        <SpecimenCarousel mirror
+            items={[
+                    {
+                        kicker: "Surveying",
+                        title: "Community Survey",
+                        sample: "Oasis",
+                        meta: "Conducting, Analysis & Report",
+                        links: [['https://observablehq.com/d/36afc13d417712f4', 'Live Code ↗']],
+                        description:
+                        "Developed a cross-sectional Survey for measuring our local climbing community needs.",
+                    },
+                    {
+                        kicker: "LLM Training",
+                        title: "Xat-like Model",
+                        sample: "AI",
+                        meta: "Conducting, Analysis & Report",
+                        links: [['https://huggingface.co/heroprotagonist/models', 'Models ↗']],
+                        description:
+                        "Trained AI models in the cloud through Modal dot com.",
+                    },
+                    {
+                        kicker: "",
+                        title: "Web Scrap",
+                        sample: "Data",
+                        meta: "Educational",
+                        links: [
+                            [
+                                "https://github.com/carafelix/yoga-poses-anki","Anki Yoga ↗"],
+                                ['https://github.com/carafelix/caballitos-blancos', 'Horse ↗'],
+                            ],
+                        description:
+                        "Web Scrapped different sites for educational purposes, using Puppetter, Cheerio, etc.",
+                    },
+
+                ]}
+        client:load/>
+    </Section>
+    <Section>
+        <h2 class="text-4xl">
+            Labs & Misc
+        </h2>
+        <SpecimenCarousel mirror
+        items={[
+                    {
+                        kicker: "RetroGames",
+                        title: "GameCube Controller Specialist",
+                        sample: gcc,
+                        meta: "GCC",
+                        links: [
+                            ['https://instagram.com/veet_labs', 'Instagram ↗'],
+                        ],
+                        description: "Technical and Aesthetic modifications for the Nintendo GCC specifically tailored for playing Super Smash Bros. Melee. To mention: PCB mods, Resin Casts, Reactive LEDs, Firefox Angles, Mech. switches, Paracord Cables, Tinted shells, etc.",
+                    },
+                    {
+                        kicker: "Web API",
+                        title: "API mini-game",
+                        sample: "Marvel",
+                        meta: "Self-documenting",
+                        links: [
+                            ['https://characters-api.heroprotagonist32.workers.dev/', 'Swagger ↗'],
+                            ['https://characters-api.heroprotagonist32.workers.dev/docs', 'ReDocs ↗'],
+                            ['https://github.com/carafelix/marvel-api-game', 'Code ↗']
+                        ],
+                        description: "Api-based mini-game from set instructions",
+                    },
+                    {
+                        kicker: "Web",
+                        title: "CSS Demos",
+                        sample: css,
+                        meta: "Design",
+                        links: [
+                            ["https://github.com/carafelix/sign-up-form", "Form ↗"],
+                            ["https://github.com/carafelix/admin-dashboard", "Dashboard ↗"],
+                            ["https://github.com/carafelix/calculator", "Calculator ↗"],
+                        ],
+                        description: "Simple demos.",
+                    },
+{
+                        kicker: "Web",
+                        title: "Toys",
+                        sample: "???",
+                        meta: "???",
+                        links: [
+                            ["https://github.com/carafelix/codenames-coop", "Codenames Coop ↗"],
+                            ["https://github.com/carafelix/paintesque", "Paintesque ↗"],
+                            ["https://github.com/carafelix/rps-sansukumi-ken","RPS ↗"],
+                            ["https://github.com/carafelix/qubic","Qubic↗"],
+                            ["https://github.com/carafelix/alfabeto-angelical","Base-n encode ↗"]
+                        ],
+                        description: "Strange things I needed for some reason.",
+                    },
+                            
+        ]}
+        
+        client:load/>
+    </Section>
+    <Footer />
+</Layout>
